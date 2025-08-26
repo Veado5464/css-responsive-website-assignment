@@ -1,17 +1,141 @@
-/* 
-  * Add the styles that belong to the DESKTOP view only
-  * Add the media rule and the styles that are common within the TABLET and MOBILE views
-  * Add the media rule and the styles that belong to the MOBILE view only
-*/
-
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
-    display: none;
-  } */
 
-  /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  .top-navigation:hover {
+    background-color: transparent;
+    border: red 1px solid;
+  }
+
+  .teammate-social-icons:hover {
+    background-color: transparent;
+    border: red 1px solid;
+  }
+
+  .social-icons:hover {
+    background-color: transparent;
+    border: red 1px solid;
+  }
+  
+  .footer-contacts ul li a:hover {
+    background-color: transparent;
+    border: red 1px solid;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (max-width: 1023px) {
 
-/* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+  .top-navigation ul {
+    display: none;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .teammates-list:before,
+  .teammates-list:after {
+    content: none;
+  }
+
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+    .teammate {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 45%;
+    margin-bottom: 40px;
+  }
+
+  .teammate-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 55%;
+  } 
+}
+
+/* I need help, mobile will not upload or show when going live. Why? */
+@media (max-width: 767px) and (min-width: 360px) {
+
+  .top-navigation ul {
+    display: none;
+    border: red 1px solid;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    border: red 1px solid;
+  }
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+    border: red 1px solid;
+  }
+
+  .teammates-list:before,
+  .teammates-list:after {
+    content: none;
+  }
+
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: red 1px solid;
+  }
+  
+    .teammate {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 45%;
+    margin-bottom: 40px;
+    border: red 1px solid;
+  }
+
+  .teammate-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: red 1px solid;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 55%;
+    border: red 1px solid;
+  } 
+}
